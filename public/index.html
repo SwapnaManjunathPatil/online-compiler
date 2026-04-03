@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Compiler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>💻 Online Compiler</h1>
+  <p> A Simple online compiler to run C++, Python, and Java programs</p>
+
+  <!-- Language Selector -->
+  <select id="language">
+    <option value="python">Python</option>
+    <option value="cpp">C++</option>
+    <option value="java">Java</option>
+  </select>
+
+  <!-- Code Editor -->
+  <textarea id="code" placeholder="Write your code here..."></textarea>
+
+  <!-- Run Button -->
+  <button onclick="runCode()">▶ Run</button>
+
+  <!-- Output -->
+  <h3>Output:</h3>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
