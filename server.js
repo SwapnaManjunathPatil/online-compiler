@@ -10,11 +10,11 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // connect MongoDB
-//mongoose.connect("mongodb://127.0.0.1:27017/compiler", {
+//mongoose.connect("mongodb+srv://swapnapatil050_db_user:8V4mmwctwXDC94gc@cluster0.9qg1uzt.mongodb.net/compiler?retryWrites=true&w=majority", {
   useNewUrlParser: true,
  // useUnifiedTopology: true,
 //})
-mongoose.connect("mongodb://127.0.0.1:27017/compiler")
+mongoose.connect("mongodb+srv://swapnapatil050_db_user:8V4mmwctwXDC94gc@cluster0.9qg1uzt.mongodb.net/compiler?retryWrites=true&w=majority")
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 //.then(() => console.log("MongoDB Connected"))
