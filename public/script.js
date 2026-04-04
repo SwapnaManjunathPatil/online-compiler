@@ -3,7 +3,7 @@ async function runCode() {
   const language = document.getElementById("language").value;
 
   try {
-    const response = await fetch("https://online-compiler-ui6a.onrender.com/run", {
+    const response = await fetch("https://localhost:5000/code/run", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
